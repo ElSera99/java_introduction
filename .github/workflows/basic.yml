@@ -5,7 +5,8 @@ name: my_first_action
 # When the work will run:
 on:
   push:
-    branches: # Instead of list can also be declared as  branches: ["!main"]
+    branches: # Instead of list can also be declared as  branches: ["!main
+      - "**"
       - "!main"
 
   workflow_dispatch:
