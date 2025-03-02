@@ -1,0 +1,31 @@
+# This is a test for executing java files after a commit
+
+name: my_first_action
+
+# When the work will run:
+on:
+  push:
+    branches: # Instead of list can also be declared as  branches: ["!main"]
+      - "!main"
+
+  workflow_dispatch:
+
+# Jobs declaration
+jobs:
+  # Build program
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test output
+        run: echo "This is a test"
+        
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java environment
+        uses: actions/setup-java@v4.7.0
+
+      - name: Compile into Class objects
+        run: javac HelloWorld/src/* -d bin
+
+    # Execute compiled program
