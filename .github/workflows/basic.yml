@@ -8,8 +8,8 @@ on:
     branches: # Instead of list can also be declared as  branches: ["!main
       - "**"
       - "!main"
-
-  workflow_dispatch:
+  
+  workflow_dispatch: {}
 
 # Jobs declaration
 jobs:
