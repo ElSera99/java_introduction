@@ -6,11 +6,10 @@ name: my_first_action
 on:
   push:
     branches: # Instead of list can also be declared as  branches: ["!main
-      - "**"
-      - "!main"
+      - '**'
+      - '!main'
+  workflow_dispatch: # This event will only trigger a workflow run if the workflow file exists on the default branch.
   
-  # workflow_dispatch # This event will only trigger a workflow run if the workflow file exists on the default branch.
-
 # Jobs declaration
 jobs:
   # Build program
