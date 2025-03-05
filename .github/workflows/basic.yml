@@ -25,6 +25,9 @@ jobs:
 
       - name: Setup Java environment
         uses: actions/setup-java@v4.7.0
+        with:
+          distribution: 'oracle'
+          java-version: '23.0.2'
 
       - name: Compile into Class objects
         run: javac HelloWorld/src/* -d bin
