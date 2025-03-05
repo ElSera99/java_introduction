@@ -32,5 +32,7 @@ public class Variables {
         // Use method getTime from Date instance
         now.getTime();
         System.out.println(now);
+
+        System.out.println("End of test");
     }
 }
