@@ -30,5 +30,6 @@ jobs:
 
       - name: Compile into Class objects
         run: javac HelloWorld/src/* -d bin
-
-    # Execute compiled program
+      
+      - name: Execute compiled programs
+        run: java -cp HelloWorld/bin --enable-preview Variables
