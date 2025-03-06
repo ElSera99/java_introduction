@@ -14,7 +14,7 @@ on:
 jobs:
   # Build program
   build:
-    runs-on: ubuntu-latest
+    runs-on: my_first_runner
     steps:
       - name: Test output
         run: echo "This is a test"
