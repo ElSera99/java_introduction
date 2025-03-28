@@ -1,6 +1,6 @@
 # This is a test for executing java files after a commit
 name: My First Pipeline
-run-name: Pipeline run by @${{ github.actor }}
+run-name: Pipeline run by @${{ github.actor }} | Trigger ${{ github.event_name }} | Execution /# ${{ github.run_number }}
 
 # When the work will run:
 on:
