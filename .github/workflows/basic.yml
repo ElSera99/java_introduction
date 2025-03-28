@@ -14,7 +14,7 @@ on:
 jobs:
   # Build program
   build:
-    runs-on: my_first_runner
+    runs-on: [self-hosted]
     steps:
       - name: Test output
         run: echo "This is a test"
