@@ -1,6 +1,6 @@
 # This is a test for executing java files after a commit
-
-name: my_first_action
+name: My First Pipeline
+run-name: Pipeline run by @${{ github.actor }}
 
 # When the work will run:
 on:
@@ -14,7 +14,7 @@ on:
 jobs:
   # Build program
   build:
-    runs-on: ubuntu-latest
+    runs-on: my_first_runner
     steps:
       - name: Test output
         run: echo "This is a test"
