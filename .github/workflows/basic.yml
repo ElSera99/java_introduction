@@ -1,6 +1,5 @@
 # This is a test for executing java files after a commit
-
-name: my_first_action
+run-name: Pipeline run by @${{ github.actor }}
 
 # When the work will run:
 on:
